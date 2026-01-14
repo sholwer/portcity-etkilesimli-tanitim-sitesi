@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortCity | Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-link">Ana Sayfa</a>
+        <a href="about.html" class="nav-link">Hakkımızda</a>
+        <a href="services.html" class="nav-link">Hizmetler</a>
+        <a href="contact.html" class="nav-link">İletişim</a>
+        <button id="theme-toggle">Temayı Değiştir</button>
+    </nav>
+
+    <main>
+        <header class="hero-section">
+            <h1>⚓ PortCity Dünyasına Hoş Geldiniz</h1>
+            <p>Ege'nin kalbinde, modern yaşamla denizin buluştuğu eşsiz liman kenti.</p>
+        </header>
+
+        <section class="action-card">
+            <h3>Şehri Seviyor Musunuz?</h3>
+            <button id="like-btn">👍 Beğen</button>
+            <p>Toplam Beğeni: <span id="like-count">0</span></p>
+        </section>
+
+        <section class="gallery-container">
+            <h2>Şehirden Kareler</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=500" class="gallery-thumb" data-index="0" alt="PortCity Manzara 1">
+                <img src="https://images.unsplash.com/photo-1534570122623-99e8378a9aa7?w=500" class="gallery-thumb" data-index="1" alt="PortCity Manzara 2">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=500" class="gallery-thumb" data-index="2" alt="PortCity Manzara 3">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500" class="gallery-thumb" data-index="3" alt="PortCity Manzara 4">
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox-modal">
+        <span class="close-btn" id="lightbox-close">&times;</span>
+        <span class="prev-btn" id="lightbox-prev">&#10094;</span>
+        <img class="lightbox-content" id="lightbox-image" src="" alt="Büyük Görsel">
+        <span class="next-btn" id="lightbox-next">&#10095;</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
